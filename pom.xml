@@ -19,6 +19,7 @@
 		<maven.compiler.target>17</maven.compiler.target>
 		<spring.boot.version>3.3.1</spring.boot.version>
 		<hutool.version>5.8.29</hutool.version>
+		<lombok.version>1.18.34</lombok.version>
 	</properties>
 
 	<repositories>
@@ -44,11 +45,16 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			<!-- hutool工具类 -->
 			<dependency>
 				<groupId>cn.hutool</groupId>
 				<artifactId>hutool-all</artifactId>
 				<version>${hutool.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>${lombok.version}</version>
+				<scope>provided</scope>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
